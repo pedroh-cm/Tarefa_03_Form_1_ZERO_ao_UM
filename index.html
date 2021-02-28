@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_form.png">
+    <title>Formulário em HTML</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset class="grupo" style="width: 680px;"><br>
+
+            <legend><strong>Formulário</strong></legend>
+
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong>
+                    <input type="text" name="nome" id="nome" required>
+                </label>
+            </div><br>
+
+            <div class="campo">
+                <label for=""><strong>E-mail:</strong>
+                    <input type="email" name="email" id="email" required>
+                </label>
+            </div><br>
+
+            <div class="campo">
+                <label for="tel"><strong>Telefone:</strong>
+                    <input type="tel" name="tel" id="tel" required>
+                </label>
+            </div><br>
+
+            <div class="campo">
+                <label for="idade"><strong>Idade:</strong>
+                    <select name="idade" id="idade">
+                        <option value="" selectdisabled>Selecione...</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                </label>
+            </div><br>
+
+            <div class="campo">
+                <label for="sexo"><strong>Sexo:</strong></label>
+                <div><br>
+                    <strong>M</strong><input type="radio" name="sexo" value="M">
+                    <strong>F</strong><input type="radio" name="sexo" value="F">
+                </div>
+            </div><br>
+
+            <div class="campo">
+                <label for=""><strong>Tipo de navegador utilizado:</strong></label><br><br>
+
+                <label for="google"><strong>Google Chrome</strong></label>
+                <input type="checkbox" name="google" id="google">
+
+                <label for="ie"><strong>Internet Explorer</strong></label>
+                <input type="checkbox" name="ie" id="ie">
+
+                <label for="firefox"><strong>Firefox</strong></label>
+                <input type="checkbox" name="firefox" id="firefox">
+
+                <label for="safari"><strong>Safari</strong></label>
+                <input type="checkbox" name="safari" id="safari">
+
+                <label for="outros"><strong>Outros</strong></label>
+                <input type="checkbox" name="outros" id="outros">
+            </div><br>
+
+            <div class="campo">
+                <label for="mensagem"><strong>Mensagem:</strong></label><br><br>
+                <textarea name="mensagem" id="mensagem" cols="40" row="10"
+                    placeholder="Digite aqui sua mensagem..."></textarea>
+            </div><br>
+
+            <button type="submit" class="botao">Enviar</button>
+            <button type="reset" class="botao">Limpar</button>
+
+        </fieldset>
+</form>
+</body>
+</html>
